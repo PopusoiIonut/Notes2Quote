@@ -1,6 +1,6 @@
 //
-//  Notes2QuoteApp.swift
-//  Notes2Quote
+//  Notes_2_QuoteApp.swift
+//  Notes-2-Quote
 //
 //  Created by USER on 03/02/2026.
 //
@@ -9,10 +9,10 @@ import SwiftUI
 import SwiftData
 
 @main
-struct Notes2QuoteApp: App {
+struct Notes_2_QuoteApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            SavedQuote.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
